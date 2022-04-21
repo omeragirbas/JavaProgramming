@@ -1,6 +1,6 @@
 package day39_Recap.shapeTask;
-
-public class Rectangle {
+//public class Rectangle { boyleydi duzeltti
+public class Rectangle extends Shape {
     private double length, width;
 
     public double getLength() {
@@ -25,5 +25,35 @@ public class Rectangle {
             System.exit(1);
         }
         this.width = width;
+    }
+
+    public Rectangle(String name, double length, double width) {
+       // super(name); bunu da sildi
+        super("Rectangle");
+        setLength(length);
+        setWidth(width);
+
+       // this.length = length;  bunları sildi
+      //  this.width = width;
+    }
+
+    @Override
+    public double area() {
+        return length*width;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*(length+width);
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
     }
 }

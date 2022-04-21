@@ -1,6 +1,6 @@
 package day38_Inheritance.carTask;
 
-public class Car {
+public class Car  {
         public String brand,model;
         public int year;
         public double price;
@@ -23,7 +23,6 @@ public class Car {
 
     }
 
-    @Override
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
@@ -34,7 +33,8 @@ public class Car {
                 ", miles=" + miles +
                 '}';
     }
-    /* public void fly(){
+
+  /* public void fly(){
 
     }*/
 }

@@ -22,4 +22,26 @@ public class Square extends Shape {
    //OTO GELDİ SİLDİ     this.side = side;
     setSide(side);
     }
+
+    @Override
+    public double area() {
+
+        return side*side;
+    }
+
+    @Override
+    public double perimeter() {
+      //  return super.perimeter();  //buraı sildi
+        return side*4;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' + //bu ikisini kendi yazdı
+                '}';
+    }
 }

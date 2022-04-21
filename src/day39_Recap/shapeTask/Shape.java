@@ -23,9 +23,20 @@ public class Shape {
     }
     public double area(){
         return 0;
-
     }
     public double perimeter(){
         return 0;//
     }
+
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    //son iki satiri ben ekledim
+    }
+
 }

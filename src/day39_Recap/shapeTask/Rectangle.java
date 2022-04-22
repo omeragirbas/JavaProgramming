@@ -27,7 +27,7 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
-    public Rectangle(String name, double length, double width) {
+    public Rectangle(double length, double width) {
        // super(name); bunu da sildi
         super("Rectangle");
         setLength(length);

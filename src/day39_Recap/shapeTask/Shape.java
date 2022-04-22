@@ -27,6 +27,7 @@ public class Shape {
     public double perimeter(){
         return 0;//
     }
+    //0 OLMASI BASLANGIC ICIN SADECE KULLANMIYOR SONRASI ICIN
 
 
     @Override
